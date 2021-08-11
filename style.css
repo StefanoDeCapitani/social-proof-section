@@ -365,10 +365,12 @@ B: Media max-width: 500px
 
   .reviews .review_card:first-child{
     margin-bottom: 10px;
+    margin-right: 0;
   }
 
   .reviews .review_card:last-child{
     margin-top: 10px;
+    margin-left: 0;
   }
 
   .review_card{
