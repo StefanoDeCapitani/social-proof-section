@@ -133,7 +133,7 @@ body{
 .ratings {
   grid-area: ratings;
 
-  height: 100%;
+  height: 90%;
 
   display: flex;
   flex-direction: column;
