@@ -54,8 +54,8 @@ body{
   position: relative;
 
   min-height: 100vh;
-  width: 100vw;
-  background: white;
+  background: url(images/bg-pattern-top-desktop.svg) left top no-repeat,
+              url(images/bg-pattern-bottom-desktop.svg) right bottom no-repeat;
 
   font-family: 'Spartan', sans-serif;
 
@@ -96,7 +96,7 @@ body{
   ==================*/
 
 .container {
-  width: 70%;
+  width: 70vw;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -114,7 +114,7 @@ body{
 .text h1 {
   width: 12ch;
 
-  font-size: 40px;
+  font-size: 2.4rem;
   color: var(--very-dark-magenta);
 }
 
@@ -123,7 +123,7 @@ body{
 
   margin-top: 10px;
 
-  font-size: 15px;
+  font-size: 1rem;
   line-height: 25px;
   color: var(--dark-grayish-magenta);
 }
@@ -158,7 +158,7 @@ body{
 .rating span {
   margin-left: 10px;
 
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 700;
 }
 
@@ -208,17 +208,18 @@ body{
   align-items: center;
 }
 
+.reviewer div{
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
 .reviewer div:first-child {
   color: white;
-  font-size: 13px;
   line-height: 25px;
-  font-weight: 500;
 }
 
 .reviewer div:last-child {
   color: var(--soft-pink);
-  font-size: 13px;
-  font-weight: 500;
 }
 
 .reviewer img {
@@ -230,7 +231,7 @@ body{
 .review_card p {
   margin-top: 30px;
   color: white;
-  font-size: 11px;
+  font-size: 0.7rem;
   line-height: 25px;
   font-weight: 500;
 }
@@ -248,21 +249,44 @@ body{
   color: var(--soft-pink);
 }
 
-
 /*""""""""""""""""""
 ---------------------
-B: Media max-width: 500px
+B: Media max-width: 1230px
 ---------------------
 """"""""""""""""""""*/
 
-@media screen and (max-width: 500px) {
+
+@media screen and (max-width: 1230px) {
+  .body{
+    justify-content: flex-start;
+    align-items: flex-start;
+
+  }
+
+  .container{
+    width: 860px;
+    margin: 100px 0;
+  }
+
+  .review_card p {
+    margin-top: 15px;
+  }
+}
+
+/*""""""""""""""""""
+---------------------
+B: Media max-width: 900px
+---------------------
+""""""""""""""""""""*/
+
+@media screen and (max-width: 900px) {
 
   /*==================
       1.Global styles
     ==================*/
   body{
-    min-height: 100vh;
-    width: 100vw;
+    background: url(images/bg-pattern-top-mobile.svg) left top no-repeat,
+                url(images/bg-pattern-bottom-mobile.svg) right bottom no-repeat;
   }
 
   /*==================
